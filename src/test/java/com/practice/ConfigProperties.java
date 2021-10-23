@@ -9,7 +9,7 @@ public class ConfigProperties
 {
 	public static void main(String[] args) throws IOException 
 	{
-		FileInputStream fis= new FileInputStream("../SDET_1/src/test/resources/config.properties");
+		FileInputStream fis= new FileInputStream("..\\SDET_PROJECT\\Commond.properties");
 		Properties prop= new Properties();
 		prop.load(fis);
 		String propvalue=prop.getProperty("userName");
