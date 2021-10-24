@@ -7,10 +7,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.AssertJUnit;
+
 import org.testng.annotations.Test;
 
-import com.Vtiger.Generic.Baseclass;
+import com.Vtiger.Generic.Baseclasses;
 import com.Vtiger.Generic.ExcelUtility;
 import com.Vtiger.Generic.JavaUtility;
 import com.Vtiger.Generic.WebDriverUtility;
@@ -21,7 +21,7 @@ import com.Vtiger.ObjectRepo.Homepage;
 import com.Vtiger.ObjectRepo.OrgInfoPage;
 
 
-public class GroupingTest extends Baseclass{
+public class GroupingTest extends Baseclasses{
 
 		@Test(groups= {"smoke"})
 		public void TC001_CreateContact() throws Throwable

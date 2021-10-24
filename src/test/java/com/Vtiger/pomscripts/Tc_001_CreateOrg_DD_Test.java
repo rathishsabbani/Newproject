@@ -7,14 +7,14 @@ import org.openqa.selenium.WebElement;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
-import com.Vtiger.Generic.Baseclass;
+import com.Vtiger.Generic.Baseclasses;
 import com.Vtiger.Generic.JavaUtility;
 import com.Vtiger.Generic.WebDriverUtility;
 import com.Vtiger.ObjectRepo.CreateNewOrg;
 import com.Vtiger.ObjectRepo.Homepage;
 import com.Vtiger.ObjectRepo.OrgInfoPage;
 
-public class Tc_001_CreateOrg_DD_Test extends Baseclass
+public class Tc_001_CreateOrg_DD_Test extends Baseclasses
 {
 
 	@Test

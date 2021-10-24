@@ -14,11 +14,9 @@ import org.testng.annotations.BeforeSuite;
 import com.Vtiger.ObjectRepo.Homepage;
 import com.Vtiger.ObjectRepo.Loginpage;
 
-
-public class Baseclass {
-	
+public class Baseclasses {
 	public WebDriver driver;
-	public FileUtility fileutility= new FileUtility();
+	public FileUtility fileutility = new FileUtility();
 	public Homepage hp;
 	public static WebDriver sdriver;
 	
@@ -34,7 +32,7 @@ public class Baseclass {
 		System.out.println("Close the Database Connection");
 	}
 	
-	//@Parameters("browser")
+	
     @BeforeClass(groups={"smoke","sanity","regression"})
     public void launchbrowser() throws Throwable
     {
@@ -83,5 +81,5 @@ public class Baseclass {
 		driver.close();
 	}
 	
-	
+
 }

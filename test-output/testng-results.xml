@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-23T11:56:21 IST" name="Default suite" finished-at="2021-10-23T11:56:48 IST" duration-ms="27283">
+  <suite started-at="2021-10-23T14:19:22 IST" name="Default suite" finished-at="2021-10-23T14:22:38 IST" duration-ms="195664">
     <groups>
     </groups>
-    <test started-at="2021-10-23T11:56:21 IST" name="Default test" finished-at="2021-10-23T11:56:48 IST" duration-ms="27283">
+    <test started-at="2021-10-23T14:19:22 IST" name="Default test" finished-at="2021-10-23T14:22:38 IST" duration-ms="195664">
       <class name="com.Vtiger.pomscripts.Tc_001_CreateContact_Test">
-        <test-method is-config="true" signature="startconnection()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@72e5a8e]" started-at="2021-10-23T11:56:21 IST" name="startconnection" finished-at="2021-10-23T11:56:21 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="startconnection()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@6e6f2380]" started-at="2021-10-23T14:19:22 IST" name="startconnection" finished-at="2021-10-23T14:19:22 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startconnection -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@72e5a8e]" started-at="2021-10-23T11:56:21 IST" name="launchbrowser" finished-at="2021-10-23T11:56:25 IST" duration-ms="3926" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@6e6f2380]" started-at="2021-10-23T14:19:22 IST" name="launchbrowser" finished-at="2021-10-23T14:20:40 IST" duration-ms="77564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method is-config="true" signature="logindetails()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@72e5a8e]" started-at="2021-10-23T11:56:25 IST" name="logindetails" finished-at="2021-10-23T11:56:28 IST" duration-ms="2711" status="PASS">
+        <test-method is-config="true" signature="logindetails()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@6e6f2380]" started-at="2021-10-23T14:20:40 IST" name="logindetails" finished-at="2021-10-23T14:21:16 IST" duration-ms="35688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logindetails -->
-        <test-method signature="TC001_CreateContact()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@72e5a8e]" started-at="2021-10-23T11:56:28 IST" name="TC001_CreateContact" finished-at="2021-10-23T11:56:47 IST" duration-ms="19062" status="PASS">
+        <test-method signature="TC001_CreateContact()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@6e6f2380]" started-at="2021-10-23T14:21:16 IST" name="TC001_CreateContact" finished-at="2021-10-23T14:22:35 IST" duration-ms="79093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001_CreateContact -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@72e5a8e]" started-at="2021-10-23T11:56:47 IST" name="logout" finished-at="2021-10-23T11:56:48 IST" duration-ms="1399" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@6e6f2380]" started-at="2021-10-23T14:22:35 IST" name="logout" finished-at="2021-10-23T14:22:38 IST" duration-ms="2773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@72e5a8e]" started-at="2021-10-23T11:56:48 IST" name="closebrowser" finished-at="2021-10-23T11:56:48 IST" duration-ms="118" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@6e6f2380]" started-at="2021-10-23T14:22:38 IST" name="closebrowser" finished-at="2021-10-23T14:22:38 IST" duration-ms="386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="closeconnection()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@72e5a8e]" started-at="2021-10-23T11:56:48 IST" name="closeconnection" finished-at="2021-10-23T11:56:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeconnection()[pri:0, instance:com.Vtiger.pomscripts.Tc_001_CreateContact_Test@6e6f2380]" started-at="2021-10-23T14:22:39 IST" name="closeconnection" finished-at="2021-10-23T14:22:39 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeconnection -->

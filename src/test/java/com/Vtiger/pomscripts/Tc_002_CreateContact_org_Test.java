@@ -8,13 +8,13 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.Vtiger.Generic.Baseclass;
+import com.Vtiger.Generic.Baseclasses;
 import com.Vtiger.Generic.ExcelUtility;
 import com.Vtiger.ObjectRepo.ContactInfopage;
 import com.Vtiger.ObjectRepo.CreateNewContactPage;
 import com.Vtiger.ObjectRepo.Homepage;
 
-public class Tc_002_CreateContact_org_Test extends Baseclass {
+public class Tc_002_CreateContact_org_Test extends Baseclasses {
 
 	@Test
 	public void CreateContactTestWindowHandle() throws Throwable 
