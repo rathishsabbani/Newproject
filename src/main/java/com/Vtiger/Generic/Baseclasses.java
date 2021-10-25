@@ -32,7 +32,6 @@ public class Baseclasses {
 		System.out.println("Close the Database Connection");
 	}
 	
-	
     @BeforeClass(groups={"smoke","sanity","regression"})
     public void launchbrowser() throws Throwable
     {
