@@ -22,11 +22,11 @@ package com.practice;
 		
 		public void Tc001_DeleteOrganization() throws Throwable
 		{
-			FileInputStream fis = new FileInputStream("../SDET_11/src/test/resources/data/config1.properties");
+			FileInputStream fis = new FileInputStream("..\\SDET_PROJECT\\Commond.properties");
 			Properties prop = new Properties();
 			prop.load(fis);
 
-			FileInputStream fs = new FileInputStream("../SDET_11/src/test/resources/data/Input Data.xlsx");
+			FileInputStream fs = new FileInputStream("..\\SDET_PROJECT\\contact.xlsx");
 			Workbook wb = WorkbookFactory.create(fs);
 
 			//opening the browser
@@ -53,7 +53,7 @@ package com.practice;
 
 			//Entering the username and password
 			driver.findElement(By.name("user_name")).sendKeys(prop.getProperty("username"));
-			driver.findElement(By.name("user_password")).sendKeys(prop.getProperty("password"));
+			driver.findElement(By.name("user_passwordS")).sendKeys(prop.getProperty("password"));
 			driver.findElement(By.id("submitButton")).click();
 		
 		

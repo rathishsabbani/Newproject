@@ -1,5 +1,11 @@
-package com.Vtiger.Generic;
+  package com.Vtiger.Generic;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,15 +16,17 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.Vtiger.ObjectRepo.Homepage;
 import com.Vtiger.ObjectRepo.Loginpage;
+
 
 public class Baseclasses {
 	public WebDriver driver;
 	public FileUtility fileutility = new FileUtility();
 	public Homepage hp;
-	public static WebDriver sdriver;
+	public static WebDriver staticdriver;
 	
 	@BeforeSuite(groups={"smoke","sanity","regression"})
 	public void startconnection()
@@ -32,10 +40,12 @@ public class Baseclasses {
 		System.out.println("Close the Database Connection");
 	}
 	
+	@Parameters("browser")
+	
     @BeforeClass(groups={"smoke","sanity","regression"})
-    public void launchbrowser() throws Throwable
+    public void launchbrowser(String browsername) throws Throwable
     {
-    	String browsername=fileutility.readDatafromPropfile("browser");
+    	//String browsername=fileutility.readDatafromPropfile("browser");
     	if
     	(browsername.equals("chrome"))
     	{
@@ -52,7 +62,7 @@ public class Baseclasses {
     	{
     		driver = new SafariDriver();
     	}
-    	sdriver=driver;
+    	staticdriver=driver;
     	driver.get(fileutility.readDatafromPropfile("url"));
     	driver.manage().window().maximize();
     }
@@ -78,7 +88,26 @@ public class Baseclasses {
 	public void closebrowser()
 	{
 		driver.close();
+		
+	}
+	@AfterSuite(groups= {"smoke","regression"})
+	public void closeConnection()
+	{
+		System.out.println("Close the Connection with DataBase");
 	}
 	
+	public static String getscreenshot(String name) throws IOException
+	{
+		File srcfile = ((TakesScreenshot) staticdriver).getScreenshotAs(OutputType.FILE);
+		
+	  String destfile= System.getProperty("user.dir")+"/screen/"+name+".png";
+	
+	  File finaldest=new File(destfile);
+		FileUtils.copyFile(srcfile, finaldest);
+		
+		return destfile;
+	
+	  
+	  }
 
 }

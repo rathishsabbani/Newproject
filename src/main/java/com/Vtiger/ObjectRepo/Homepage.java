@@ -12,8 +12,11 @@ public class Homepage {
 	WebDriver driver;
 	WebDriverUtility webutility = new WebDriverUtility();
 
-	public Homepage(WebDriver driver) {
-		this.driver= driver;
+	public Homepage(WebDriver driver) 
+	
+	{
+		this.driver = driver;
+		
 		PageFactory.initElements(driver, this);
 	}
 

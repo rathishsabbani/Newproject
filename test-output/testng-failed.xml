@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Vtiger.pomscripts.Tc_001_CreateContact_Test">
+      <class name="com.contact.Tc_002_CreateContact_Reports_Test">
         <methods>
-          <include name="logindetails"/>
-          <include name="TC001_CreateContact"/>
-          <include name="startconnection"/>
-          <include name="launchbrowser"/>
-          <include name="closeconnection"/>
-          <include name="logout"/>
-          <include name="closebrowser"/>
+          <include name="Tc002_CreateContactwithReports"/>
         </methods>
-      </class> <!-- com.Vtiger.pomscripts.Tc_001_CreateContact_Test -->
+      </class> <!-- com.contact.Tc_002_CreateContact_Reports_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

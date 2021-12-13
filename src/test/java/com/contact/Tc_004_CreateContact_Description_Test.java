@@ -8,8 +8,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.Vtiger.Generic.Baseclasses;
 import com.Vtiger.Generic.ExcelUtility;
 import com.Vtiger.Generic.FileUtility;
 import com.Vtiger.Generic.WebDriverUtility;
@@ -17,39 +19,16 @@ import com.Vtiger.ObjectRepo.ContactInfopage;
 import com.Vtiger.ObjectRepo.CreateNewContactPage;
 import com.Vtiger.ObjectRepo.Homepage;
 import com.Vtiger.ObjectRepo.Loginpage;
-
-public class Tc_004_CreateContact_Description_Test {
+@Listeners(com.Vtiger.Generic.ListenersImplementations.class)
+public class Tc_004_CreateContact_Description_Test extends Baseclasses{
 	
-	WebDriver driver;
+
 	@Test
 	public void Tc004_CreateContactwithDescription() throws Throwable
 	{
-		FileUtility flib= new FileUtility();
-		ExcelUtility Elib= new ExcelUtility();
-		//open the browser
-		String browsername = flib.readDatafromPropfile("browser");
-		if (browsername.equals("chrome")) {
-			driver = new ChromeDriver();
-			System.out.println("chrome is opened");
-		} else if (browsername.equals("ff")) {
-
-		} else {
-			System.out.println("please enter proper browser name");
-		}
 		
-		//Enter the url
-		driver.get(flib.readDatafromPropfile("url"));
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);           
-		driver.manage().window().maximize();                                       
-		
-      //Giving username and password
-		//Step 2 Login to app
-		Loginpage lp= new Loginpage(driver);
-		lp.logintoApp();
-		
-		 Homepage hp =new Homepage(driver);
-	     hp.getContactslink().click();
+		 ExcelUtility Elib = new ExcelUtility();
+			Homepage hp = new Homepage(driver);
 			
 	     ContactInfopage cip= new ContactInfopage(driver);
 	     cip.createcont();  
@@ -108,7 +87,7 @@ public class Tc_004_CreateContact_Description_Test {
 			{
 				Assert.assertTrue(true);
 				}
-		        driver.close();
+		       
 			
 	}
 
