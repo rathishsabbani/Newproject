@@ -2,18 +2,65 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-13T16:02:31 IST" name="Default suite" finished-at="2021-12-13T16:04:56 IST" duration-ms="144737">
+  <suite started-at="2021-12-30T15:53:40 IST" name="Default suite" finished-at="2021-12-30T15:53:53 IST" duration-ms="13519">
     <groups>
     </groups>
-    <test started-at="2021-12-13T16:02:31 IST" name="Default test" finished-at="2021-12-13T16:04:56 IST" duration-ms="144737">
-      <class name="com.contact.Tc_002_CreateContact_Reports_Test">
-        <test-method signature="Tc002_CreateContactwithReports()[pri:0, instance:com.contact.Tc_002_CreateContact_Reports_Test@27f981c6]" started-at="2021-12-13T16:02:31 IST" name="Tc002_CreateContactwithReports" finished-at="2021-12-13T16:04:56 IST" duration-ms="144432" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+    <test started-at="2021-12-30T15:53:40 IST" name="Default test" finished-at="2021-12-30T15:53:53 IST" duration-ms="13519">
+      <class name="com.contact.PracticeContact">
+        <test-method is-config="true" signature="startconnection()[pri:0, instance:com.contact.PracticeContact@7ef82753]" started-at="2021-12-30T15:53:40 IST" name="startconnection" finished-at="2021-12-30T15:53:40 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startconnection -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.contact.PracticeContact@7ef82753]" started-at="2021-12-30T15:53:40 IST" name="launchbrowser" finished-at="2021-12-30T15:53:45 IST" duration-ms="5365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method is-config="true" signature="logindetails()[pri:0, instance:com.contact.PracticeContact@7ef82753]" started-at="2021-12-30T15:53:45 IST" name="logindetails" finished-at="2021-12-30T15:53:50 IST" duration-ms="4599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logindetails -->
+        <test-method signature="PracticeContact()[pri:0, instance:com.contact.PracticeContact@7ef82753]" started-at="2021-12-30T15:53:50 IST" name="PracticeContact" finished-at="2021-12-30T15:53:50 IST" duration-ms="227" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Create Contact...']"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WINDOWS7', ip: '169.254.22.34', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\NEERAJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86ee4aa328349da7afa5988735ae7392
+*** Element info: {Using=xpath, value=//img[@title='Create Contact...']}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.Vtiger.Generic.ExcelUtility.readDatafromExcel(ExcelUtility.java:16)
-at com.Vtiger.ObjectRepo.CreateNewContactPage.WindowHandle(CreateNewContactPage.java:195)
-at com.contact.Tc_002_CreateContact_Reports_Test.Tc002_CreateContactwithReports(Tc_002_CreateContact_Reports_Test.java:70)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Create Contact...']"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WINDOWS7', ip: '169.254.22.34', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\NEERAJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86ee4aa328349da7afa5988735ae7392
+*** Element info: {Using=xpath, value=//img[@title='Create Contact...']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy16.click(Unknown Source)
+at com.Vtiger.ObjectRepo.ContactInfopage.createcont(ContactInfopage.java:31)
+at com.contact.PracticeContact.PracticeContact(PracticeContact.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -44,11 +91,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Tc002_CreateContactwithReports -->
-      </class> <!-- com.contact.Tc_002_CreateContact_Reports_Test -->
+        </test-method> <!-- PracticeContact -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.contact.PracticeContact@7ef82753]" started-at="2021-12-30T15:53:50 IST" name="logout" finished-at="2021-12-30T15:53:53 IST" duration-ms="3162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.contact.PracticeContact@7ef82753]" started-at="2021-12-30T15:53:53 IST" name="closebrowser" finished-at="2021-12-30T15:53:53 IST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="closeconnection()[pri:0, instance:com.contact.PracticeContact@7ef82753]" started-at="2021-12-30T15:53:53 IST" name="closeconnection" finished-at="2021-12-30T15:53:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeconnection -->
+      </class> <!-- com.contact.PracticeContact -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -26,7 +26,7 @@ public class ListenersImplementations implements ITestListener {
 			String path=Baseclasses.getscreenshot(result.getMethod().getMethodName());
 			test.addScreenCaptureFromPath(path);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 

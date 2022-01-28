@@ -1,0 +1,20 @@
+2021-12-30 15:33:22,952  INFO [main] Login:20 - connecting to database
+2021-12-30 15:33:22,986  INFO [main] Login:25 - Opening the browser
+2021-12-30 15:33:42,201  INFO [main] Login:33 - Login
+2021-12-30 15:34:16,665  INFO [main] Login:42 - close the browser
+2021-12-30 15:34:17,486  INFO [main] Login:48 - close the database connection
+2021-12-30 15:35:25,448  INFO [main] Login:20 - connecting to database
+2021-12-30 15:35:25,480  INFO [main] Login:25 - Opening the browser
+2021-12-30 15:35:37,234  INFO [main] Login:33 - Login
+2021-12-30 15:36:03,403  INFO [main] Login:42 - close the browser
+2021-12-30 15:36:03,819  INFO [main] Login:48 - close the database connection
+2021-12-30 15:37:41,517  INFO [main] Login:20 - connecting to database
+2021-12-30 15:37:41,546  INFO [main] Login:25 - Opening the browser
+2021-12-30 15:37:52,734  INFO [main] Login:33 - Login
+2021-12-30 15:37:56,703  INFO [main] Login:42 - close the browser
+2021-12-30 15:37:57,226  INFO [main] Login:48 - close the database connection
+2021-12-30 15:38:29,658  INFO [main] Login:20 - connecting to database
+2021-12-30 15:38:29,690  INFO [main] Login:25 - Opening the browser
+2021-12-30 15:38:36,949  INFO [main] Login:33 - Login
+2021-12-30 15:38:43,225  INFO [main] Login:42 - close the browser
+2021-12-30 15:38:43,420  INFO [main] Login:48 - close the database connection

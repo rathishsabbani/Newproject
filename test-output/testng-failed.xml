@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.contact.Tc_002_CreateContact_Reports_Test">
+      <class name="com.contact.PracticeContact">
         <methods>
-          <include name="Tc002_CreateContactwithReports"/>
+          <include name="closeconnection"/>
+          <include name="launchbrowser"/>
+          <include name="closebrowser"/>
+          <include name="logindetails"/>
+          <include name="startconnection"/>
+          <include name="logout"/>
+          <include name="PracticeContact"/>
         </methods>
-      </class> <!-- com.contact.Tc_002_CreateContact_Reports_Test -->
+      </class> <!-- com.contact.PracticeContact -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

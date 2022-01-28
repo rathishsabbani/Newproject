@@ -13,9 +13,11 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.Vtiger.ObjectRepo.Homepage;
@@ -40,12 +42,12 @@ public class Baseclasses {
 		System.out.println("Close the Database Connection");
 	}
 	
-	@Parameters("browser")
+	// @Parameters("browser")
 	
     @BeforeClass(groups={"smoke","sanity","regression"})
-    public void launchbrowser(String browsername) throws Throwable
+    public void launchbrowser() throws Throwable
     {
-    	//String browsername=fileutility.readDatafromPropfile("browser");
+    String browsername=fileutility.readDatafromPropfile("browser");
     	if
     	(browsername.equals("chrome"))
     	{
@@ -90,11 +92,6 @@ public class Baseclasses {
 		driver.close();
 		
 	}
-	@AfterSuite(groups= {"smoke","regression"})
-	public void closeConnection()
-	{
-		System.out.println("Close the Connection with DataBase");
-	}
 	
 	public static String getscreenshot(String name) throws IOException
 	{
@@ -106,8 +103,6 @@ public class Baseclasses {
 		FileUtils.copyFile(srcfile, finaldest);
 		
 		return destfile;
-	
-	  
 	  }
 
 }
